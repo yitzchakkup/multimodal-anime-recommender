@@ -49,9 +49,9 @@ For a deep dive into the mathematical foundations, data processing pipeline, and
 ---
 
 ## 👥 Collaboration & Credits
-This system was built as a highly collaborative effort. While all three of us contributed to the overarching system design, data strategy, and algorithmic architecture, we each took primary ownership over specific technical domains:
+This system was built as a highly collaborative team effort. The overarching system design, data strategy, multimodal image analysis (SVD/ResNet), and core recommendation algorithms (such as the Max-Heap ranking system) were developed jointly. Additionally, we each took primary ownership over specific technical domains:
 
-* **Yitschak Kupinsky** ([yitschak.kupinsky@mail.huji.ac.il](mailto:yitschak.kupinsky@mail.huji.ac.il)): Lead Architect of the **Full-Stack Web Application**, independent developer of the exploratory **Multimodal Image Analysis (SVD/ResNet)** pipeline, and developer of the **Max-Heap ranking system**.
+* **Yitschak Kupinsky** ([yitschak.kupinsky@mail.huji.ac.il](mailto:yitschak.kupinsky@mail.huji.ac.il)): Lead Architect and independent developer of the **Full-Stack Web Application**, responsible for designing the interactive Flask dashboard and translating the team's backend clustering logic into a user-facing product.
 * **Osher Serero** ([osher.serero@mail.huji.ac.il](mailto:osher.serero@mail.huji.ac.il)): Primary focus on the **Core Clustering Logic**, similarity matrix optimizations, handling sparse data structures, and statistical data analysis.
 * **Ehud Kotegaro** ([ehud.kotegaro@mail.huji.ac.il](mailto:ehud.kotegaro@mail.huji.ac.il)): Primary focus on **Model Validation**, designing the robust Fidelity Testing framework, and engineering the "Odd One Out" human-validation logic and cross-analysis.
 

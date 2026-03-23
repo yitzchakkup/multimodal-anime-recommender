@@ -1,0 +1,80 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Anime Recommender</h1>
+
+        {% if error_message %}
+            <p class="error">{{ error_message }}</p>
+        {% endif %}
+
+        <form method="POST">
+            <h2>Rate Animes You've Watched (1-10)</h2>
+            <p>Leave blank for animes you haven't watched.</p>
+
+            <!-- Search Bar Added Here -->
+            <div class="search-bar">
+                <input type="text" id="animeSearch" onkeyup="filterAnimeList()" placeholder="Search for animes...">
+            </div>
+
+            <div class="anime-list" id="animeListContainer">
+                {% for title in anime_titles %}
+                    <div class="anime-item" data-title="{{ title | lower }}">
+                        <label for="rating_{{ title }}">{{ title }}:</label>
+                        <input type="number" id="rating_{{ title }}" name="rating_{{ title }}" min="1" max="10" step="1">
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="recommendation-settings">
+                <label for="amount_to_recommend">How many recommendations do you want (max {{ max_recommended }})?</label>
+                <input type="number" id="amount_to_recommend" name="amount_to_recommend" min="1" max="{{ max_recommended }}" value="5" required>
+            </div>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        {% if recommended_animes %}
+            <div class="recommendations">
+                <h2>Your Recommended Animes:</h2>
+                <ul>
+                    {% for anime in recommended_animes %}
+                        <li>{{ anime }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        function filterAnimeList() {
+            // Declare variables
+            var input, filter, animeListContainer, animeItems, label, i, txtValue;
+            input = document.getElementById('animeSearch');
+            filter = input.value.toLowerCase();
+            animeListContainer = document.getElementById('animeListContainer');
+            animeItems = animeListContainer.getElementsByClassName('anime-item');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < animeItems.length; i++) {
+                // Get the label text (anime title)
+                label = animeItems[i].getElementsByTagName('label')[0];
+                txtValue = label.textContent || label.innerText;
+
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    animeItems[i].style.display = "";
+                } else {
+                    animeItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

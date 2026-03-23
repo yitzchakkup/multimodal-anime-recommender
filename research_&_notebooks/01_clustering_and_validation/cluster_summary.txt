@@ -1,0 +1,54 @@
+ANIME CLUSTER SUMMARY
+==================================================
+
+Cluster 1: Romance + Comedy + School (245 anime)
+  Archetype: Adult Romance
+  Top genres: Romance (76.7%), Comedy (61.6%), School (57.1%)
+
+Cluster 2: Drama + Sci-Fi + Action (127 anime)
+  Archetype: Dark Fantasy
+  Top genres: Drama (53.5%), Sci-Fi (44.1%), Action (34.6%)
+
+Cluster 3: Comedy + Action + Romance (165 anime)
+  Archetype: Dark Fantasy
+  Top genres: Comedy (46.7%), Action (43.6%), Romance (32.1%)
+
+Cluster 4: Comedy + Romance + Action (160 anime)
+  Archetype: Adult Romance
+  Top genres: Comedy (50.0%), Romance (44.4%), Action (42.5%)
+
+Cluster 5: Comedy + Fantasy + Romance (178 anime)
+  Archetype: Dark Fantasy
+  Top genres: Comedy (43.3%), Fantasy (41.6%), Romance (31.5%)
+
+Cluster 6: Action + Shounen + Supernatural (204 anime)
+  Archetype: Battle Shounen
+  Top genres: Action (60.3%), Shounen (47.1%), Supernatural (37.7%)
+
+Cluster 7: Romance + Comedy + Shoujo (73 anime)
+  Archetype: Adult Romance
+  Top genres: Romance (57.5%), Comedy (56.2%), Shoujo (37.0%)
+
+Cluster 8: Shounen + Comedy + Drama (113 anime)
+  Archetype: Sports Drama
+  Top genres: Shounen (62.8%), Comedy (59.3%), Drama (48.7%)
+
+Cluster 9: Adventure + Fantasy + Comedy (74 anime)
+  Archetype: Dark Fantasy
+  Top genres: Adventure (86.5%), Fantasy (81.1%), Comedy (73.0%)
+
+Cluster 10: Comedy + Action + Shounen (148 anime)
+  Archetype: Dark Fantasy
+  Top genres: Comedy (63.5%), Action (46.6%), Shounen (45.9%)
+
+Cluster 11: Action + Comedy + Supernatural (154 anime)
+  Archetype: Dark Fantasy
+  Top genres: Action (47.4%), Comedy (44.8%), Supernatural (41.6%)
+
+Cluster 12: Action + Fantasy + Supernatural (199 anime)
+  Archetype: Dark Fantasy
+  Top genres: Action (72.9%), Fantasy (34.7%), Supernatural (29.6%)
+
+Cluster 13: Comedy + Slice of Life + School (160 anime)
+  Archetype: Slice of Life Comedy
+  Top genres: Comedy (76.2%), Slice of Life (57.5%), School (37.5%)
